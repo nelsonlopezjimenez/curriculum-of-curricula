@@ -100,67 +100,67 @@ The design is old school. It explains in detail the mechanics of HTML/CSS/JS wit
 
 <ol>
       <li>Watch this BBC short for an <a href="https://www.youtube.com/watch?v=eHp1l73ztB8" target="_blank" rel="noopener noreferrer">overview of how the internet works</a>.</li>
-      <li>Read this <a href="https://developer.mozilla.org/en-US/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">Mozilla article on “How does the internet work?”</a>.</li>
+      <li>Read this <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">Mozilla article on “How does the internet work?”</a>.</li>
       <li>Watch <a href="https://youtu.be/7_LPdttKXPc?t=46s" target="_blank" rel="noopener noreferrer">How the Internet Works in 5 Minutes</a>.</li>
-      <li>Read up on the <a href="https://developer.mozilla.org/en-US/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">differences between a web page, a web server, and a search engine</a>.</li>
+      <li>Read up on the <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">differences between a web page, a web server, and a search engine</a>.</li>
       <li>Watch this <a href="https://youtu.be/BrXPcaRlBqo" target="_blank" rel="noopener noreferrer">Google short explaining what a web browser is</a>. Then, use this site to <a href="https://www.whatsmybrowser.org/" target="_blank" rel="noopener noreferrer">find out your current web browser and version</a>.</li>
-      <li>Read about <a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/How_the_Web_works#Clients_and_servers" target="_blank" rel="noopener noreferrer">how different parts of the web interact with each other</a> and read this <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name#how_does_a_dns_request_work" target="_blank" rel="noopener noreferrer">MDN article about how a DNS request works</a>. Alternatively, here is a <a href="https://www.youtube.com/watch?v=72snZctFFtA&amp;t=45s" target="_blank" rel="noopener noreferrer">video about how a DNS request works</a>.</li>
+      <li>Read about <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/How_the_Web_works#Clients_and_servers" target="_blank" rel="noopener noreferrer">how different parts of the web interact with each other</a> and read this <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name#how_does_a_dns_request_work" target="_blank" rel="noopener noreferrer">MDN article about how a DNS request works</a>. Alternatively, here is a <a href="https://www.youtube.com/watch?v=72snZctFFtA&amp;t=45s" target="_blank" rel="noopener noreferrer">video about how a DNS request works</a>.</li>
     </ol>
 
 <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">What is a web server?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is a network?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">What is a web server?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is a network?</a></li>
     <li><a href="https://www.youtube.com/watch?v=7_LPdttKXPc&amp;t=46s" target="_blank" rel="noopener noreferrer">What is the internet?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is an IP address?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is a router?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is an ISP?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#packets_explained" target="_blank" rel="noopener noreferrer">What are packets and how are they used to transfer data?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#clients_and_servers" target="_blank" rel="noopener noreferrer">What is a client?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#clients_and_servers" target="_blank" rel="noopener noreferrer">What is a server?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">What is a web page?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is an IP address?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is a router?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank" rel="noopener noreferrer">What is an ISP?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#packets_explained" target="_blank" rel="noopener noreferrer">What are packets and how are they used to transfer data?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#clients_and_servers" target="_blank" rel="noopener noreferrer">What is a client?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#clients_and_servers" target="_blank" rel="noopener noreferrer">What is a server?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">What is a web page?</a></li>
     <li><a href="https://www.youtube.com/watch?v=BrXPcaRlBqo&amp;feature=youtu.be" target="_blank" rel="noopener noreferrer">What is a web browser?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">What is a search engine?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">What is a search engine?</a></li>
     <li><a href="https://www.youtube.com/watch?v=72snZctFFtA&amp;t=45s" target="_blank" rel="noopener noreferrer">What is a DNS request?</a></li>
     <li><a href="https://www.whatsmybrowser.org/" target="_blank" rel="noopener noreferrer">Which browser are you currently using?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">In your own words, describe the process that takes place when you initiate a search on google.com in terms of what we discussed.</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines" target="_blank" rel="noopener noreferrer">In your own words, describe the process that takes place when you initiate a search on google.com in terms of what we discussed.</a></li>
   </ul>
 
   Some advice on reading: We recommend that you only review the immediate links posted in our curriculum. You can always go deeper on any subject if you wish, but be careful not to overload yourself on information!
 
   forms 
   <ol>
-      <li>Read and follow along with <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms#introductory_guides" target="_blank" rel="noopener noreferrer">MDN’s Introductory Guides to Forms</a> - complete <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form" target="_blank" rel="noopener noreferrer">Your first form</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form" target="_blank" rel="noopener noreferrer">How to structure a web form</a></li>
-      <li>Read and follow along with <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms#the_different_form_controls" target="_blank" rel="noopener noreferrer">MDN’s The Different Form Controls Guides</a></li>
+      <li>Read and follow along with <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Forms#introductory_guides" target="_blank" rel="noopener noreferrer">MDN’s Introductory Guides to Forms</a> - complete <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form" target="_blank" rel="noopener noreferrer">Your first form</a> and <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form" target="_blank" rel="noopener noreferrer">How to structure a web form</a></li>
+      <li>Read and follow along with <a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Forms#the_different_form_controls" target="_blank" rel="noopener noreferrer">MDN’s The Different Form Controls Guides</a></li>
     </ol>
 
     <li><a href="https://web.dev/learn/forms/" target="_blank" rel="noopener noreferrer">Web.dev’s Form Course</a></li>
 
-    https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+    http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
 
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet
+    http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet
 
-    https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+    http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
 
 Odin Project JS data types conditionals
     <ul>
     <li><a href="https://javascript.info/types#summary" target="_blank" rel="noopener noreferrer">What are the eight data types in JavaScript?</a></li>
     <li><a href="https://javascript.info/types#objects-and-symbols" target="_blank" rel="noopener noreferrer">Which data type is NOT primitive?</a></li>
     <li><a href="https://javascript.info/types#the-null-value" target="_blank" rel="noopener noreferrer">What is the relationship between null and undefined?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#single_quotes_double_quotes_and_backticks" target="_blank" rel="noopener noreferrer">What is the difference between single, double, and backtick quotes for strings?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#embedding_javascript" target="_blank" rel="noopener noreferrer">What is the term for joining strings together?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#embedding_javascript" target="_blank" rel="noopener noreferrer">Which type of quote lets you embed variables/expressions in a string?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#embedding_javascript" target="_blank" rel="noopener noreferrer">How do you embed variables/expressions in a string?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#including_quotes_in_strings" target="_blank" rel="noopener noreferrer">How do you use escape characters in a string?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#single_quotes_double_quotes_and_backticks" target="_blank" rel="noopener noreferrer">What is the difference between single, double, and backtick quotes for strings?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#embedding_javascript" target="_blank" rel="noopener noreferrer">What is the term for joining strings together?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#embedding_javascript" target="_blank" rel="noopener noreferrer">Which type of quote lets you embed variables/expressions in a string?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#embedding_javascript" target="_blank" rel="noopener noreferrer">How do you embed variables/expressions in a string?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings#including_quotes_in_strings" target="_blank" rel="noopener noreferrer">How do you use escape characters in a string?</a></li>
     <li><a href="https://www.w3schools.com/js/js_string_methods.asp" target="_blank" rel="noopener noreferrer">What is the difference between the slice/substring string methods?</a></li>
     <li><a href="http://javascript.info/logical-operators" target="_blank" rel="noopener noreferrer">What are the three logical operators, and what do they stand for?</a></li>
     <li><a href="https://javascript.info/comparison" target="_blank" rel="noopener noreferrer">What are the comparison operators?</a></li>
     <li><a href="https://javascript.info/ifelse#boolean-conversion" target="_blank" rel="noopener noreferrer">What are truthy and falsy values?</a></li>
     <li><a href="https://javascript.info/ifelse#boolean-conversion" target="_blank" rel="noopener noreferrer">What are the falsy values in JavaScript?</a></li>
     <li><a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" rel="noopener noreferrer">What are conditionals?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#basic_if...else_syntax" target="_blank" rel="noopener noreferrer">What is the syntax for an if/else conditional?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#switch_statements" target="_blank" rel="noopener noreferrer">What is the syntax for a switch statement?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#ternary_operator" target="_blank" rel="noopener noreferrer">What is the syntax for a ternary operator?</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#nesting_if...else" target="_blank" rel="noopener noreferrer">What is nesting?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#basic_if...else_syntax" target="_blank" rel="noopener noreferrer">What is the syntax for an if/else conditional?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#switch_statements" target="_blank" rel="noopener noreferrer">What is the syntax for a switch statement?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#ternary_operator" target="_blank" rel="noopener noreferrer">What is the syntax for a ternary operator?</a></li>
+    <li><a href="http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#nesting_if...else" target="_blank" rel="noopener noreferrer">What is nesting?</a></li>
   </ul>
 
   https://developer.chrome.com/docs/devtools/javascript/
@@ -168,11 +168,11 @@ Odin Project JS data types conditionals
 foundations-function-basics
   ![alt text](image.png)
 
-  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions
 
-  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values
 
-  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions#function_scope_and_conflicts
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions#function_scope_and_conflicts
 
   https://www.theodinproject.com/lessons/foundations-problem-solving
 
@@ -181,15 +181,15 @@ foundations-function-basics
 
   https://www.theodinproject.com/lessons/foundations-understanding-errors
 
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError
 
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError
 
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError
 
-  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
 
-  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
+  http://localhost:22022/Public/Download/2025/mdn2025/developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
 
   https://www.w3schools.com/jsref/obj_console.asp
 
