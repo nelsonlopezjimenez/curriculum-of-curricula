@@ -43,7 +43,7 @@ Register-ScheduledTask `
     -Trigger   $trigger `
     -Settings  $settings `
     -Principal $principal `
-    -Description "Edmonds College — First logon profile setup. Self-skips after first run per user." `
+    -Description "Edmonds College -- First logon profile setup. Self-skips after first run per user." `
     -Force
 
 Write-Host "Scheduled Task registered: $TaskName" -ForegroundColor Green
