@@ -89,9 +89,7 @@ function New-Junction {
         Rename-Item $LinkPath $bak -Force
         Write-Log "$Label renamed to .bak"
     }
-    Start-Sleep -Seconds 2
-    $result = cmd /c "mklink /J `"$LinkPath`" `"$Target`"" 
-    Write-Log ("mklink result: " + $result)
+    cmd /c "mklink /J `"$LinkPath`" `"$Target`"" | Out-Null
     if ((Get-Item $LinkPath -Force -ErrorAction SilentlyContinue).Attributes -match "ReparsePoint") {
         Write-Log "$Label junction created -> $Target" "OK"
     } else {
@@ -127,10 +125,8 @@ function Invoke-ProvisionUser {
                 $elapsed++
             }
             $proc | Wait-Process -Timeout 10 -ErrorAction SilentlyContinue
-	    Start-Sleep -Seconds 3
             if (Test-Path $UserProfile) {
                 Write-Log "Profile folder created." "OK"
-		Start-Sleep -Seconds 5 
             } else {
                 Write-Log "Profile folder not created -- skipping $Username." "ERROR"
                 return
@@ -217,10 +213,56 @@ function Invoke-ProvisionUser {
 
         # Folder options -- show hidden + protected + extensions
         $advPath = "$hive\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-        reg add $advPath /v Hidden         /t REG_DWORD /d 1 /f | Out-Null
+        reg add $advPath /v Hidden          /t REG_DWORD /d 1 /f | Out-Null
         reg add $advPath /v ShowSuperHidden /t REG_DWORD /d 1 /f | Out-Null
-        reg add $advPath /v HideFileExt    /t REG_DWORD /d 0 /f | Out-Null
+        reg add $advPath /v HideFileExt     /t REG_DWORD /d 0 /f | Out-Null
         Write-Log "Folder options written." "OK"
+
+        # Environment variables
+        $envPath = "$hive\Environment"
+
+        # NVS_HOME
+        reg add $envPath /v NVS_HOME /t REG_EXPAND_SZ /d "%LOCALAPPDATA%\nvs" /f | Out-Null
+
+        # PATH -- append to existing user PATH
+        $existingPath = (reg query $envPath /v PATH 2>$null) -join ""
+        if ($existingPath -match "PATH\s+REG\w+\s+(.+)") {
+            $currentPath = $matches[1].Trim()
+        } else {
+            $currentPath = ""
+        }
+        $pathAdditions = @(
+            "%APPDATA%\npm",
+            "%LOCALAPPDATA%\nvs",
+            "%LOCALAPPDATA%\nvs\default",
+            "%USERPROFILE%\bin",
+            "%LOCALAPPDATA%\Programs\Ollama"
+        )
+        foreach ($p in $pathAdditions) {
+            if ($currentPath -notlike "*$p*") {
+                $currentPath = $currentPath.TrimEnd(";") + ";$p"
+            }
+        }
+        reg add $envPath /v PATH /t REG_EXPAND_SZ /d $currentPath /f | Out-Null
+        Write-Log "Environment variables and PATH written." "OK"
+    }
+
+    # --- nvs link default version (non-interactive, skip for Default profile) ---
+    if (-not $IsDefault -and -not [string]::IsNullOrEmpty($Password)) {
+        Write-Log "Setting nvs default node version..."
+        try {
+            $secPass = ConvertTo-SecureString $Password -AsPlainText -Force
+            $cred    = New-Object System.Management.Automation.PSCredential($Username, $secPass)
+            Start-Process "cmd.exe" `
+                -ArgumentList "/c nvs link 24.16.0" `
+                -Credential $cred `
+                -LoadUserProfile `
+                -WindowStyle Hidden `
+                -Wait
+            Write-Log "nvs link 24.16.0 completed." "OK"
+        } catch {
+            Write-Log ("nvs link failed: " + $_) "WARN"
+        }
     }
 
     # --- Set provisioned flag ---
