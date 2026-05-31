@@ -152,7 +152,7 @@ function Invoke-ProvisionUser {
     New-Junction -LinkPath $appDataPath               -Target $AppDataTarget  -Label "AppData"
     New-Junction -LinkPath "$UserProfile\.vscode"     -Target $VscodeTarget   -Label ".vscode"
 
-    $dotfiles = @(".gitconfig", ".npmrc", ".bash_profile", ".bash_history", ".nvs")
+    $dotfiles = @(".gitconfig", ".npmrc", ".bash_profile", ".bash_history")
     foreach ($dot in $dotfiles) {
         $src = "$DotfilesTarget\$dot"
         if (Test-Path $src) {

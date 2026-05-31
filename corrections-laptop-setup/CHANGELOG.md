@@ -359,3 +359,145 @@ foreach ($u in $usersToProcess) {
 
 Write-Log "====== New-UserSetup Complete ======"
 Write-Log "Log saved to: $LogPath"
+
+
+ C:\Users\gator> Get-ChildItem "C:\Users\Public\bin" -Directory | ForEach-Object {
+>>     $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue |
+>>         Measure-Object -Property Length -Sum).Sum
+>>     [PSCustomObject]@{Folder=$_.Name; Size_GB=[math]::Round($size/1GB,2)}
+>> } | Sort-Object Size_GB -Descending
+
+Folder           Size_GB
+------           -------
+golden25-AppData   14.43
+dotfiles            1.95
+vscode              1.37
+Desktop                0
+
+C:\Users\gator> Get-ChildItem "C:\Users\Public\bin" -Directory | ForEach-Object {
+>>     $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue |
+>>         Measure-Object -Property Length -Sum).Sum
+>>     [PSCustomObject]@{
+>>         Folder   = $_.Name
+>>         Size_GB  = [math]::Round($size/1GB, 2)
+>>         Size_MB  = [math]::Round($size/1MB, 0)
+>>         Files    = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue).Count
+>>     }
+>> } | Sort-Object Size_GB -Descending | Format-Table -AutoSize
+
+Folder           Size_GB Size_MB  Files
+------           ------- -------  -----
+golden25-AppData   14.43   14772 258733
+dotfiles            1.95    2002  53714
+vscode              1.37    1403  67263
+Desktop                0       0     10
+
+
+PS C:\Users\gator> # First level -- top 10 largest subfolders in golden25-AppData\Local
+PS C:\Users\gator> $localAppData = "C:\Users\Public\bin\golden25-AppData\Local"
+PS C:\Users\gator>
+PS C:\Users\gator> Write-Host "`n=== TOP 10 -- First Level ===" -ForegroundColor Green
+
+=== TOP 10 -- First Level ===
+PS C:\Users\gator> $firstLevel = Get-ChildItem $localAppData -Directory | ForEach-Object {
+>>     $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue |
+>>         Measure-Object -Property Length -Sum).Sum
+>>     [PSCustomObject]@{
+>>         Folder  = $_.Name
+>>         Size_GB = [math]::Round($size/1GB, 2)
+>>         Size_MB = [math]::Round($size/1MB, 0)
+>>         Files   = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue).Count
+>>     }
+>> } | Sort-Object Size_GB -Descending | Select-Object -First 10
+PS C:\Users\gator>
+PS C:\Users\gator> $firstLevel | Format-Table -AutoSize
+
+Folder        Size_GB Size_MB  Files
+------        ------- -------  -----
+Google           1.98    2022  11228
+Programs         1.86    1907   8369
+nvs              1.44    1471  64271
+pnpm             1.35    1378 131369
+Vivaldi          1.15    1177   1797
+ms-playwright    0.88     898   1481
+360Chrome        0.87     888   3297
+PowerToys        0.68     695   2473
+Postman          0.54     557     78
+Packages         0.46     469   2980
+
+
+PS C:\Users\gator>
+PS C:\Users\gator> # Second level -- top 5 subfolders inside each of top 5 first-level folders
+PS C:\Users\gator> Write-Host "`n=== TOP 5 SUBFOLDERS inside top 5 folders ===" -ForegroundColor Green
+
+=== TOP 5 SUBFOLDERS inside top 5 folders ===
+PS C:\Users\gator> $firstLevel | Select-Object -First 5 | ForEach-Object {
+>>     $parentName = $_.Folder
+>>     $parentPath = "$localAppData\$parentName"
+>>     Write-Host "`n-- $parentName --" -ForegroundColor Yellow
+>>
+>>     Get-ChildItem $parentPath -Directory -ErrorAction SilentlyContinue | ForEach-Object {
+>>         $size = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue |
+>>             Measure-Object -Property Length -Sum).Sum
+>>         [PSCustomObject]@{
+>>             Subfolder = $_.Name
+>>             Size_GB   = [math]::Round($size/1GB, 2)
+>>             Size_MB   = [math]::Round($size/1MB, 0)
+>>             Files     = (Get-ChildItem $_.FullName -Recurse -File -ErrorAction SilentlyContinue).Count
+>>         }
+>>     } | Sort-Object Size_GB -Descending | Select-Object -First 5 | Format-Table -AutoSize
+>> }
+
+-- Google --
+
+Subfolder     Size_GB Size_MB Files
+---------     ------- ------- -----
+Chrome           1.51    1544 11215
+GoogleUpdater    0.46     472    12
+Update           0.01       6     1
+
+
+
+-- Programs --
+
+Subfolder         Size_GB Size_MB Files
+---------         ------- ------- -----
+Opera                0.78     800   379
+Microsoft VS Code    0.75     772  6585
+Scratch 3            0.33     335  1405
+Common                  0       0     0
+
+
+
+-- nvs --
+
+Subfolder Size_GB Size_MB Files
+--------- ------- ------- -----
+node         1.18    1211 64156
+cache        0.25     259    28
+default       0.1     100  1943
+tools           0       0     2
+lib             0       0    19
+
+
+
+-- pnpm --
+
+Subfolder Size_GB Size_MB  Files
+--------- ------- -------  -----
+store        1.35    1378 131369
+
+
+
+-- Vivaldi --
+
+Subfolder   Size_GB Size_MB Files
+---------   ------- ------- -----
+Application    0.99    1017  1316
+User Data      0.12     127   478
+Temp           0.03      33     3
+
+
+PS C:\Users\gator>
+
+
